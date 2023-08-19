@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "archlinux-hyprland-config-python"
+version = "0.1.0"
+description = ""
+authors = ["Ulises Alexander AM <ulises_alexander_am@proton.me>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "archlinux_hyprland_config_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
